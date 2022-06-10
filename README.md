@@ -26,7 +26,7 @@ This project is build with:
 - ![SQL](https://img.shields.io/badge/SQL-00000F?style=for-the-badge&logo=sql&logoColor=white)
 -  ![Postgre](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## Author
+## Authors
 
 👤 **Evans Sitibekiso**
 
