@@ -33,3 +33,12 @@ WHERE name like '%mon';
 UPDATE animals
 SET species_id = (SELECT id from species WHERE name = 'Pokemon')
 WHERE species_id IS NULL;
+
+-- Modify inserted animals to include owner information (owner_id): 
+UPDATE animals
+SET owner_id = (SELECT id from owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon';
+
+UPDATE animals
+SET owner_id = (SELECT id from owners WHERE full_name = 'Jennifer Orwell')
+WHERE name = 'Gabumon' OR name = 'Pikachu';
