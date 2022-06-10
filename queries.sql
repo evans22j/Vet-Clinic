@@ -12,3 +12,8 @@ SELECT * FROM animals WHERE name <> 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 -- SELECT COALESCE(species, 'unspecified') FROM animals
+
+
+-- Adding a new columnn species to type string to the animals
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(100)
