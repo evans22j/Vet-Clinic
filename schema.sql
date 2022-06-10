@@ -40,3 +40,10 @@ CREATE TABLE specializations (
 	species_id BIGINT REFERENCES species (id),
 	vets_id BIGINT REFERENCES vets (id)
 );
+
+
+CREATE TABLE visits (
+	animals_id BIGINT REFERENCES animals (id),
+	vets_id BIGINT REFERENCES vets (id),
+	date_of_visit DATE
+);
