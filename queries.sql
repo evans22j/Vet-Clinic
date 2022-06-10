@@ -17,3 +17,10 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 -- Adding a new columnn species to type string to the animals
 ALTER TABLE animals
 ADD COLUMN species VARCHAR(100)
+
+-- Inside a transaction update the animals(species column)
+BEGIN TRANSACTION;
+UPDATE animals SET species = 'unspecified';
+SELECT species FROM animals;
+ROLLBACK;
+SELECT species FROM animals;
